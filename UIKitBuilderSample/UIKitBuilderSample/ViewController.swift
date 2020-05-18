@@ -32,6 +32,12 @@ class ViewController: UIViewController {
             $0.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
             $0.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         }
+        
+        if #available(iOS 13.0, *) {
+//            CardView().preview.config(width: UIScreen.main.bounds.width)
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 

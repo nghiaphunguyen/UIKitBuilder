@@ -32,6 +32,16 @@ extension ViewLayoutable where Self: UIView {
         configuration(view)
         return view
     }
+    
+    @discardableResult public func set<T>(_ keyPath: ReferenceWritableKeyPath<Self, T>, _ value: T) -> Self {
+        self[keyPath: keyPath] = value
+        return self
+    }
+    
+    @available(iOS 13.0, *)
+    public var preview: PreviewUIView<Self> {
+        PreviewUIView(view: self)
+    }
 }
 
 extension UIView: ViewLayoutable {}

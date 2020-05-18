@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D554569C246D4BF400AFFC74 /* PreviewSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554569B246D4BF400AFFC74 /* PreviewSize.swift */; };
+		D55586142459D21D0015F6CF /* ViewConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D555860F2459D21C0015F6CF /* ViewConfigurable.swift */; };
+		D55586152459D21D0015F6CF /* PreviewDevice+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55586102459D21C0015F6CF /* PreviewDevice+Enum.swift */; };
+		D55586162459D21D0015F6CF /* PreviewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55586112459D21C0015F6CF /* PreviewUIView.swift */; };
+		D55586182459D21D0015F6CF /* View+PreviewDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55586132459D21D0015F6CF /* View+PreviewDevices.swift */; };
 		D5F682002455D9CD00A8CD5B /* UIKitBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F681F62455D9CD00A8CD5B /* UIKitBuilder.framework */; };
 		D5F682052455D9CD00A8CD5B /* UIKitBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F682042455D9CD00A8CD5B /* UIKitBuilderTests.swift */; };
 		D5F682072455D9CD00A8CD5B /* UIKitBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F681F92455D9CD00A8CD5B /* UIKitBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D554569B246D4BF400AFFC74 /* PreviewSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSize.swift; sourceTree = "<group>"; };
+		D555860F2459D21C0015F6CF /* ViewConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfigurable.swift; sourceTree = "<group>"; };
+		D55586102459D21C0015F6CF /* PreviewDevice+Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+Enum.swift"; sourceTree = "<group>"; };
+		D55586112459D21C0015F6CF /* PreviewUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewUIView.swift; sourceTree = "<group>"; };
+		D55586132459D21D0015F6CF /* View+PreviewDevices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+PreviewDevices.swift"; sourceTree = "<group>"; };
 		D5F681F62455D9CD00A8CD5B /* UIKitBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F681F92455D9CD00A8CD5B /* UIKitBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitBuilder.h; sourceTree = "<group>"; };
 		D5F681FA2455D9CD00A8CD5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +76,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D555860E2459D1F40015F6CF /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				D55586102459D21C0015F6CF /* PreviewDevice+Enum.swift */,
+				D55586112459D21C0015F6CF /* PreviewUIView.swift */,
+				D55586132459D21D0015F6CF /* View+PreviewDevices.swift */,
+				D555860F2459D21C0015F6CF /* ViewConfigurable.swift */,
+				D554569B246D4BF400AFFC74 /* PreviewSize.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
 		D5F681EC2455D9CD00A8CD5B = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +128,7 @@
 		D5F682102455DA2D00A8CD5B /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				D555860E2459D1F40015F6CF /* Preview */,
 				D5F682112455DA7C00A8CD5B /* StackViewBuilder.swift */,
 				D5F682122455DA7C00A8CD5B /* ViewLayoutable.swift */,
 				D5F682152455DB1000A8CD5B /* StackView.swift */,
@@ -228,12 +251,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55586142459D21D0015F6CF /* ViewConfigurable.swift in Sources */,
 				D5F682182455DB6D00A8CD5B /* HStackView.swift in Sources */,
+				D55586162459D21D0015F6CF /* PreviewUIView.swift in Sources */,
 				D5F6821C2455E06500A8CD5B /* StackViewLayoutable.swift in Sources */,
+				D554569C246D4BF400AFFC74 /* PreviewSize.swift in Sources */,
 				D5F682142455DA7C00A8CD5B /* ViewLayoutable.swift in Sources */,
 				D5F682132455DA7C00A8CD5B /* StackViewBuilder.swift in Sources */,
+				D55586182459D21D0015F6CF /* View+PreviewDevices.swift in Sources */,
 				D5F6821A2455DB9600A8CD5B /* VStackView.swift in Sources */,
 				D5F682162455DB1000A8CD5B /* StackView.swift in Sources */,
+				D55586152459D21D0015F6CF /* PreviewDevice+Enum.swift in Sources */,
 				D5F682252455EB5700A8CD5B /* WrapperView.swift in Sources */,
 				D5F682232455E18F00A8CD5B /* PureView.swift in Sources */,
 			);
@@ -389,6 +417,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UIKitBuilder/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +443,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UIKitBuilder/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
